@@ -18,7 +18,6 @@ pipeline {
                     dir("build_java"){
 
                         sh "mvn -f pom.xml clean install -Dmaven.test.skip=true"
-                        # sh "tree"
                     }   
                 }
             }
